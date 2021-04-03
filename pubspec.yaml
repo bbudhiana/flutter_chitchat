@@ -24,13 +24,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cloud_firestore: ^0.16.0
-  country_code_picker: ^1.7.0
-  cupertino_icons: ^1.0.0
-  firebase_analytics: ^7.0.1
-  firebase_auth: ^0.20.0+1
-  firebase_core: ^0.7.0
-  font_awesome_flutter: ^8.11.0
+  cloud_firestore: ^1.0.3
+  country_code_picker: ^2.0.1
+  cupertino_icons: ^1.0.2
+  firebase_analytics: ^7.1.1
+  firebase_auth: ^1.0.1
+  firebase_core: ^1.0.2
+  font_awesome_flutter: ^9.0.0
 
 dev_dependencies:
   flutter_test:
