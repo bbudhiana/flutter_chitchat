@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chitchat/bottom_navigation/main_screen.dart';
+import 'package:flutter_chitchat/screens/detail_screen.dart';
 import 'package:flutter_chitchat/screens/login_screen.dart';
+import 'package:flutter_chitchat/screens/page_slider_screen.dart';
+import 'package:flutter_chitchat/screens/planapp_screen.dart';
+import 'package:flutter_chitchat/screens/slider_screen.dart';
 import 'package:flutter_chitchat/screens/verification_screen.dart';
 
 import 'screens/splash_screen.dart';
 
 void main() {
+  //WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -14,6 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter ChitChat',
       theme: ThemeData(
         //brightness: Brightness.dark,
@@ -32,9 +38,13 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName: (ctx) => SplashScreen(),
+        SliderScreen.routeName: (ctx) => SliderScreen(),
+        PageSliderScreen.routeName: (ctx) => PageSliderScreen(),
         LoginScreen.routeName: (ctx) => LoginScreen(),
         VerificationScreen.routeName: (ctx) => VerificationScreen(),
         MainScreen.routeName: (ctx) => MainScreen(),
+        PlanappScreen.routeName: (ctx) => PlanappScreen(),
+        DetailScreen.routeName: (ctx) => DetailScreen(),
       },
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

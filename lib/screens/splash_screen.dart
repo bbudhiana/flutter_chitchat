@@ -13,8 +13,12 @@ class _SplashScreenState extends State<SplashScreen> {
   late Timer _timer;
 
   removeScreen() {
-    return _timer = Timer(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacementNamed('login_screen');
+    return _timer = Timer(Duration(seconds: 3), () {
+      //Navigator.of(context).pushReplacementNamed('login_screen');
+      //Navigator.of(context).pushReplacementNamed('slider_screen');
+      //Navigator.of(context).pushReplacementNamed('page_slider_screen');
+      Navigator.of(context).pushReplacementNamed('planapp_screen');
+      //Navigator.of(context).pushReplacementNamed('detail_screen');
     });
   }
 
