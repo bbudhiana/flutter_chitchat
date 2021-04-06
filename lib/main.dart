@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_chitchat/bottom_navigation/main_screen.dart';
 import 'package:flutter_chitchat/screens/detail_screen.dart';
 import 'package:flutter_chitchat/screens/login_screen.dart';
+import 'package:flutter_chitchat/screens/on_boarding_screen.dart';
 import 'package:flutter_chitchat/screens/page_slider_screen.dart';
 import 'package:flutter_chitchat/screens/planapp_screen.dart';
 import 'package:flutter_chitchat/screens/slider_screen.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
         MainScreen.routeName: (ctx) => MainScreen(),
         PlanappScreen.routeName: (ctx) => PlanappScreen(),
         DetailScreen.routeName: (ctx) => DetailScreen(),
+        OnBoardingScreen.routeName: (ctx) => OnBoardingScreen(),
       },
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

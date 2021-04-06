@@ -17,8 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
       //Navigator.of(context).pushReplacementNamed('login_screen');
       //Navigator.of(context).pushReplacementNamed('slider_screen');
       //Navigator.of(context).pushReplacementNamed('page_slider_screen');
-      Navigator.of(context).pushReplacementNamed('planapp_screen');
+      //Navigator.of(context).pushReplacementNamed('planapp_screen');
       //Navigator.of(context).pushReplacementNamed('detail_screen');
+      Navigator.of(context).pushReplacementNamed('on_boarding_screen');
     });
   }
 
