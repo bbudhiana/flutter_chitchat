@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chitchat/bottom_navigation/main_screen.dart';
 import 'package:flutter_chitchat/screens/detail_screen.dart';
+import 'package:flutter_chitchat/screens/getsample_screen.dart';
 import 'package:flutter_chitchat/screens/login_screen.dart';
 import 'package:flutter_chitchat/screens/on_boarding_screen.dart';
 import 'package:flutter_chitchat/screens/page_slider_screen.dart';
 import 'package:flutter_chitchat/screens/planapp_screen.dart';
 import 'package:flutter_chitchat/screens/slider_screen.dart';
 import 'package:flutter_chitchat/screens/verification_screen.dart';
+import 'package:get/get.dart';
 
 import 'screens/splash_screen.dart';
 
 void main() {
   //WidgetsFlutterBinding.ensureInitialized();
-  runApp(MyApp());
+  runApp(GetMaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -47,6 +49,7 @@ class MyApp extends StatelessWidget {
         PlanappScreen.routeName: (ctx) => PlanappScreen(),
         DetailScreen.routeName: (ctx) => DetailScreen(),
         OnBoardingScreen.routeName: (ctx) => OnBoardingScreen(),
+        GetSampleScreen.routeName: (ctx) => GetSampleScreen(),
       },
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
