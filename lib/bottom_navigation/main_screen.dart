@@ -66,6 +66,8 @@ class _MainScreenState extends State<MainScreen> {
       ), */
       body: SafeArea(
         //info CustomScrollView : https://flutter.dev/docs/cookbook/lists/floating-app-bar
+        // [SliverAppBar]s are typically used in [CustomScrollView.slivers], which in
+        // turn can be placed in a [Scaffold.body].
         child: CustomScrollView(
           //untuk menggantikan appBar Default, gunakan SliverAppBar yg akan ikut scroll jika widget di scroll
           controller: _hideButtonController,
